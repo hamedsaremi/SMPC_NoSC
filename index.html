@@ -185,7 +185,32 @@ You can edit the instructions text.
 </div>
 
 
-<script type="template/text" id="otherstmp">
+<script type="template/text" id="#usertmp">
+  {{#posts}}
+    <div class="entry">
+    <div class="tophalf">
+
+    	<img src="{{avatar}}" class="avatar">
+    	<h3>{{username}}</h3>
+
+    	<div class="main">
+    		<p>{{text}}</p>
+    	</div>
+
+    	<br style="clear:both;">
+
+    </div>
+
+    <div class="bottomhalf">
+    	Likes <span class="badge badge-custom userslikes" data-likes="{{likes}}" data-usernames="{{usernames}}">0</span>
+    </div>
+    </div>
+
+  {{/posts}}
+</script>
+
+
+<script type="template/text" id="#otherstmp">
   {{#posts}}
     <div class="entry">
     <div class="tophalf">
@@ -210,32 +235,6 @@ You can edit the instructions text.
     </div>
   {{/posts}}
 </script>
-
-
-<script type="template/text" id="usertmp">
-  {{#posts}}
-    <div class="entry">
-    <div class="tophalf">
-
-    	<img src="{{avatar}}" class="avatar">
-    	<h3>{{username}}</h3>
-
-    	<div class="main">
-    		<p>{{text}}</p>
-    	</div>
-
-    	<br style="clear:both;">
-
-    </div>
-
-    <div class="bottomhalf">
-    	Likes <span class="badge badge-custom userslikes" data-likes="{{likes}}" data-usernames="{{usernames}}">0</span>
-    </div>
-    </div>
-
-  {{/posts}}
-</script>
-
 
 
 </body>
