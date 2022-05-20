@@ -186,7 +186,7 @@ You can edit the instructions text.
 
 
 <script type="template/text" id="usertmp">
-  {{#posts}}
+  {{posts}}
     <div class="entry">
     <div class="tophalf">
 
@@ -203,7 +203,6 @@ You can edit the instructions text.
 
     <div class="bottomhalf">
     	Likes <span class="badge badge-custom userslikes" data-likes="{{likes}}" data-usernames="{{usernames}}">0</span>
-      <button type="submit" class="btn pull-right btn-like btn-custom btn-deround">Like <i class="icon-thumbs-up icon-white"></i></button>
     </div>
     </div>
 
@@ -212,7 +211,7 @@ You can edit the instructions text.
 
 
 <script type="template/text" id="otherstmp">
-  {{#posts}}
+  {{posts}}
     <div class="entry">
     <div class="tophalf">
 
