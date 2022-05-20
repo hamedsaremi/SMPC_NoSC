@@ -330,7 +330,7 @@ $(function() {
 
     // Initialize like buttons
 	  $('.btn-like').on('click', function() {
-		  //$(this).prev().text(parseInt($(this).prev().text()) + 1);
+		  $(this).prev().text(parseInt($(this).prev().text()) + 1);
       // Like buttons can only be clicked once
 		  $(this).attr("disabled", true);
 	  });
